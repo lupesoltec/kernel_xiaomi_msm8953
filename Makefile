@@ -925,6 +925,9 @@ KBUILD_CFLAGS += $(call cc-disable-warning, -Wno-deprecated-declarations)
 KBUILD_CFLAGS += $(call cc-disable-warning, constant-conversion)
 KBUILD_CFLAGS += $(call cc-disable-warning, void-ptr-dereference)
 KBUILD_CFLAGS += $(call cc-disable-warning, undefined-optimized)
+KBUILD_CFLAGS += $(call cc-disable-warning, frame-larger-than)
+KBUILD_CFLAGS += $(call cc-disable-warning, return-type)
+KBUILD_CFLAGS += $(call cc-disable-warning, excess-initializers)
 KBUILD_CFLAGS += -Wno-asm-operand-widths
 KBUILD_CFLAGS += -Wno-initializer-overrides
 
